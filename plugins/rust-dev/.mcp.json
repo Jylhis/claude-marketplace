@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "rust-analyzer": {
+      "type": "stdio",
+      "command": "nix",
+      "args": ["run", "nixpkgs#rust-analyzer"],
+      "extensionToLanguage": {
+        ".rs": "rust"
+      }
+    }
+  }
+}

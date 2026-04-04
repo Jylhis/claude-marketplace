@@ -1,33 +1,51 @@
 # Claude Marketplace
 
-A marketplace for discovering, sharing, and installing Claude Code extensions — skills, MCP servers, slash commands, and hooks.
+A plugin marketplace for Claude Code. Install plugins that add skills, agents, hooks, MCP servers, and LSP servers.
+
+## Install
+
+Add this marketplace to Claude Code:
+
+```
+/plugin marketplace add Jylhis/claude-marketplace
+```
+
+Then install a plugin:
+
+```
+/plugin install example-plugin@claude-marketplace
+```
+
+## Available Plugins
+
+| Plugin | Description |
+|--------|-------------|
+| `code-explainer` | A skill for explaining code in plain English |
+| `example-plugin` | An example plugin demonstrating skills, agents, and hooks |
+| `sqlite-mcp` | MCP server providing read/write access to a local SQLite database |
+| `test-generator` | An agent that generates unit tests for source files |
+| `todo-guard` | Hook that prevents committing files with TODO/FIXME markers |
+| `typescript-lsp` | TypeScript/JavaScript language intelligence via LSP |
 
 ## Structure
 
 ```
-marketplace/
-  skills/          # Reusable Claude Code skills (.md)
-  mcp-servers/     # MCP server configurations
-  hooks/           # Pre/post hooks for Claude Code
-  slash-commands/  # Custom slash commands
+.claude-plugin/
+  marketplace.json        # Plugin catalog
+plugins/
+  code-explainer/         # Skill plugin
+  example-plugin/         # Full plugin with skills, agents, hooks
+  sqlite-mcp/             # MCP server plugin
+  test-generator/         # Agent plugin
+  todo-guard/             # Hook plugin
+  typescript-lsp/         # LSP server plugin
 ```
 
-## How It Works
-
-Each listing is a directory containing:
-
-- `manifest.json` — metadata (name, version, description, author, tags)
-- The extension files themselves
-- `README.md` — usage instructions
+Each plugin contains `.claude-plugin/plugin.json` and its component files (skills, agents, hooks, `.mcp.json`, etc.).
 
 ## Contributing
 
-1. Fork this repository
-2. Create a new directory under the appropriate category
-3. Add a `manifest.json` and your extension files
-4. Submit a pull request
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 

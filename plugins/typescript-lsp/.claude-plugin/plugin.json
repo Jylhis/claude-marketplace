@@ -1,0 +1,7 @@
+{
+  "name": "typescript-lsp",
+  "description": "TypeScript/JavaScript language intelligence via LSP",
+  "author": {
+    "name": "Markus Jylhänkangas"
+  }
+}

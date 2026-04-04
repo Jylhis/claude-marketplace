@@ -1,0 +1,7 @@
+{
+  "name": "todo-guard",
+  "description": "Hook that prevents committing files with TODO/FIXME markers",
+  "author": {
+    "name": "Markus Jylhänkangas"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "prompt",
+            "prompt": "Check if this bash command is a git commit. If it is, review the staged files for TODO or FIXME markers. If any are found, respond with BLOCK and list the files. Otherwise respond with ALLOW."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'File written: '$CLAUDE_TOOL_ARG_FILE_PATH"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "test-generator",
+  "description": "An agent that generates unit tests for source files",
+  "author": {
+    "name": "Markus Jylhänkangas"
+  }
+}

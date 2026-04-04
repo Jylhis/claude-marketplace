@@ -1,0 +1,69 @@
+{
+  "name": "claude-marketplace",
+  "description": "A marketplace for discovering and installing Claude Code extensions",
+  "owner": {
+    "name": "Markus Jylhänkangas"
+  },
+  "plugins": [
+    {
+      "name": "code-explainer",
+      "source": "./plugins/code-explainer",
+      "description": "A skill for explaining code in plain English",
+      "version": "1.0.0",
+      "tags": ["education", "explanation"],
+      "category": "learning"
+    },
+    {
+      "name": "example-plugin",
+      "source": "./plugins/example-plugin",
+      "description": "An example Claude Code plugin demonstrating skills, agents, and hooks",
+      "version": "0.1.0",
+      "tags": ["example", "starter"],
+      "category": "development"
+    },
+    {
+      "name": "sqlite-mcp",
+      "source": "./plugins/sqlite-mcp",
+      "description": "MCP server providing read/write access to a local SQLite database",
+      "version": "1.0.0",
+      "tags": ["database", "sqlite", "mcp"],
+      "category": "database"
+    },
+    {
+      "name": "test-generator",
+      "source": "./plugins/test-generator",
+      "description": "An agent that generates unit tests for source files",
+      "version": "1.0.0",
+      "tags": ["testing", "automation"],
+      "category": "testing"
+    },
+    {
+      "name": "todo-guard",
+      "source": "./plugins/todo-guard",
+      "description": "Hook that prevents committing files with TODO/FIXME markers",
+      "version": "1.0.0",
+      "tags": ["quality", "pre-commit"],
+      "category": "productivity"
+    },
+    {
+      "name": "typescript-lsp",
+      "source": "./plugins/typescript-lsp",
+      "description": "TypeScript/JavaScript language intelligence via LSP",
+      "version": "1.0.0",
+      "tags": ["lsp", "typescript", "language-server"],
+      "category": "development",
+      "lspServers": {
+        "typescript-language-server": {
+          "command": "npx",
+          "args": ["typescript-language-server", "--stdio"],
+          "extensionToLanguage": {
+            ".ts": "typescript",
+            ".tsx": "typescriptreact",
+            ".js": "javascript",
+            ".jsx": "javascriptreact"
+          }
+        }
+      }
+    }
+  ]
+}

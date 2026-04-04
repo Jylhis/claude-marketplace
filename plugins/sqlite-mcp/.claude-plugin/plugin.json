@@ -1,0 +1,7 @@
+{
+  "name": "sqlite-mcp",
+  "description": "MCP server providing read/write access to a local SQLite database",
+  "author": {
+    "name": "Markus Jylhänkangas"
+  }
+}

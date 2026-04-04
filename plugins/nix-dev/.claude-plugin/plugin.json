@@ -1,0 +1,7 @@
+{
+  "name": "nix-dev",
+  "description": "Nix development intelligence: skills covering Nix language, NixOS, flakes, devenv, and package management",
+  "author": {
+    "name": "Markus Jylhänkangas"
+  }
+}

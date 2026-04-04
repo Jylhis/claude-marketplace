@@ -1,7 +1,0 @@
-{
-  "name": "example-plugin",
-  "description": "An example Claude Code plugin demonstrating skills, agents, and hooks",
-  "author": {
-    "name": "Markus Jylhänkangas"
-  }
-}

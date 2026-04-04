@@ -1,6 +1,0 @@
-{
-  "sqlite": {
-    "command": "npx",
-    "args": ["-y", "@anthropic/mcp-server-sqlite", "--db-path", "./data.db"]
-  }
-}

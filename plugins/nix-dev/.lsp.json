@@ -1,0 +1,9 @@
+{
+  "nil": {
+    "command": "nix",
+    "args": ["run", "nixpkgs#nil"],
+    "extensionToLanguage": {
+      ".nix": "nix"
+    }
+  }
+}

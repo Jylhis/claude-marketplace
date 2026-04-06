@@ -60,6 +60,14 @@
       "version": "0.1.0",
       "tags": ["skills", "authoring"],
       "category": "development"
+    },
+    {
+      "name": "obsidian",
+      "source": "./plugins/obsidian",
+      "description": "Obsidian knowledge base skills: markdown, canvas, bases, CLI, and web content extraction",
+      "version": "1.0.0",
+      "tags": ["obsidian", "markdown", "knowledge-base", "canvas"],
+      "category": "productivity"
     }
   ]
 }

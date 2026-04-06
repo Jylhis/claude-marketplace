@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/env nix-shell
+#!nix-shell -i python3 -p "python3.withPackages (ps: with ps; [ anthropic ])"
 """Improve a skill description based on eval results.
 
 Takes eval results (from run_eval.py) and generates an improved description

@@ -1,4 +1,5 @@
-#!/usr/bin/env python3
+#!/usr/bin/env nix-shell
+#!nix-shell -i python3 -p python3
 """
 Skill Initializer - Scaffolds a new skill directory from template
 

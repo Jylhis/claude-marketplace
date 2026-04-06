@@ -16,8 +16,13 @@ A Claude Code plugin marketplace — a collection of plugins that users install 
 
 ## Current Plugins
 
-- **rust-dev** — 30 Rust skills + rust-analyzer LSP via nix (`.mcp.json`)
-- **golang-dev** — 37 Go skills (concurrency, patterns, security, troubleshooting, etc.)
+- **rust-dev** — 29 Rust skills + rust-analyzer LSP via nix (`.mcp.json`)
+- **golang-dev** — 36 Go skills (concurrency, patterns, security, troubleshooting, etc.)
+- **cpp-dev** — C++ development skills (scaffold)
+- **python-dev** — Python development skills (scaffold)
+- **nix-dev** — Nix/NixOS development skills (scaffold)
+- **productivity** — 1 skill for session management and workflows
+- **skill-creator** — 1 skill for creating and improving skills
 
 ## Key Conventions
 
